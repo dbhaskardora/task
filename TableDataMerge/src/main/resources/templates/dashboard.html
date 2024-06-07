@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <style>
+        body{
+            background-color: rgb(217, 217, 202);
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+        background-color:red;
+        color:white;
+        }
+    </style>
+</head>
+<body>
+<h2>Admin Dashboard</h2>
+<h3>Table 1 Data</h3>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="record : ${table1Data}">
+        <td th:text="${record.id}"></td>
+        <td th:text="${record.name}"></td>
+        <td th:text="${record.address}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Table 2 Data</h3>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="record : ${table2Data}">
+        <td th:text="${record.id}"></td>
+        <td th:text="${record.name}"></td>
+        <td th:text="${record.address}"></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<form th:action="@{/merge}" method="post">
+    <button type="submit">Merge Records</button>
+</form>
+
+ <button th:onclick="window.location.href=\'' + @{/export/pdf} + '\''">Export to PDF</button>
+    <button th:onclick="window.location.href=\'' + @{/export/excel} + '\''">Export to Excel</button>
+    <button th:onclick="window.location.href=\'' + @{/export/csv} + '\''">Export to CSV</button>
+    <button onclick="window.print()">Print</button>
+</body>
+</html>

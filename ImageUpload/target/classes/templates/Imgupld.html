@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+crossorigin="anonymous">
+
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><b>Student Tiff image Upload site</b></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+   aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+</header>
+<div class="container">
+
+<div class="row">
+<div class="col-md-6 offset-md-3 mt-4">
+<form action="Imgupld" enctype="multipart/form-data" method="post">
+<div class="mb-3">
+<input type="file" name="img" class="form-control">
+<p style="color: blue">File should be upload 10mb to 100Mb</p>
+</div>
+<div class="text-center">
+<button class="btn btn-primary">Upload Image</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
