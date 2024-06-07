@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  font-style: italic;
+  min-height: 100vh;
+  background-image: url(https://bfsi.eletsonline.com/wp-content/uploads/2022/09/Bank-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.content {
+  padding: 20px;
+  font-style: normal;
+
+}

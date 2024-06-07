@@ -1,0 +1,14 @@
+.footer {
+  background-image: url(https://t4.ftcdn.net/jpg/05/56/58/23/360_F_556582339_oGCGxlHpEEUGJTmgyfUnhTkYPai9HgrK.jpg);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4f0707;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+  }
+  
