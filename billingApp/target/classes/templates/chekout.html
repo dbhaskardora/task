@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <h2>Delivery Address</h2>
+    <p th:text="${deliveryAddress}"></p>
+    <h2>Seller Address</h2>
+    <p th:text="${sellerAddress}"></p>
+    <h2>Total Amount: <span th:text="${totalAmount}"></span></h2>
+    <form action="/purchase" method="post">
+        <button type="submit">Purchase</button>
+    </form>
+</body>
+</html>
